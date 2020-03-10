@@ -30,7 +30,7 @@ struct Helper {
         
         let url = success ? URLConstants.successURL : URLConstants.failURL;
         
-        request(url, method: .get)
+        AF.request(url, method: .get)
             .validate()
             .log(level: level, options: options, printer: NativePrinter())
             .responseData { (response) in

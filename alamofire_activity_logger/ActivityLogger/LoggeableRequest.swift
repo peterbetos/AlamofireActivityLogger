@@ -79,7 +79,7 @@ extension DataRequest: LoggeableRequest {
             let logResponse = ResponseInfo(httpResponse: response.response,
                                            data: response.data,
                                            error: error,
-                                           elapsedTime:  response.timeline.requestDuration)
+                                           elapsedTime:  (response.metrics?.taskInterval.duration)!)
             completion(logResponse)
         }
         
@@ -104,7 +104,7 @@ extension DownloadRequest: LoggeableRequest {
             let logResponse = ResponseInfo(httpResponse: response.response,
                                            data: data,
                                            error: error,
-                                           elapsedTime:  response.timeline.requestDuration)
+                                           elapsedTime:  response.metrics!.taskInterval.duration)
             completion(logResponse)
         }
     }

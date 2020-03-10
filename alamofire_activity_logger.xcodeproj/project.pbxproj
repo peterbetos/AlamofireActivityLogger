@@ -320,7 +320,6 @@
 				4E3441B898D28356E33D5B40 /* Pods-alamofire_activity_logger-watchos Extension.debug.xcconfig */,
 				D22442F0451F7A978FBB79A3 /* Pods-alamofire_activity_logger-watchos Extension.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -919,6 +918,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CF864KN2XE;
 				INFOPLIST_FILE = "$(SRCROOT)/ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.manuege.alamofire-activity-logger.ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -934,6 +934,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CF864KN2XE;
 				INFOPLIST_FILE = "$(SRCROOT)/ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.manuege.alamofire-activity-logger.ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
